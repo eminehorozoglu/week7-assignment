@@ -1,0 +1,1 @@
+https://www.grisayfalar.com/motivasyon-sozleri/
