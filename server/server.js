@@ -21,14 +21,14 @@ app.get("/",(_,res) => {
         await res.json(query.rows);
     });
  
-    app.post("/new-data", async(req, res) =>{
+    app.post("/new-data",(req, res) =>{
         console.log("Request body:", req.body);
-        const data = req.body;
-        const query = await db.query(`
+        const data = req.body.FormValues;
+        const query = db.query(`
             INSERT INTO mood (date, mood, daily_sentence, daily_note) 
-            VALUES($1, $2, $3, $4)`, 
-            [data.formValues.date, data.formValues.mood, data.formValues.dailySentence, data.formValues.dailyNote]); 
-        await res.json({
+            VALUES($1, $2, $3, $4) RETURNING *`, 
+            [data.date, data.moodchoice, data.dailysentence, data.dailynote]); 
+        res.json({
             message: "The data was added successfully", 
             data: query.rows})
     });

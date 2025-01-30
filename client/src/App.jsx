@@ -1,7 +1,12 @@
+import Form from "./Components/Form"
+import Header from "./Components/Header"
+
 export default function App(){
   return(
     <>
-    <h1>Daily Mode</h1>
+<Header/>
+    <Form/>
+
     </>
   )
 }
