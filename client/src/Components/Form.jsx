@@ -1,5 +1,6 @@
 //Form degerlerini tek tek atamak icin kullanilan kod
 import "./Component.css"
+import logo from "./motivational-pic.jpg"
 
 import { useState } from "react"
 export default function Form(){
@@ -33,6 +34,10 @@ function handleSubmit (event){
     
       });
       console.log(FormValues);
+      setTimeout(FormValues.onsubmit = function(){
+        alert("Message submitted!")
+         location.reload(true);
+     })
 
 }
 
@@ -50,13 +55,14 @@ return(
   onChange={handleChangeFormValues}/>
  <br />
    <label htmlFor="dailysentence">Daily Motivational Sentence:</label>
-    <textarea id="dailysentence" name="dailysentence"  rows="4" value={FormValues.dailysentence}
+    <textarea id="dailysentence" name="dailysentence"  rows="3" cols="60" value={FormValues.dailysentence}
   onChange={handleChangeFormValues} /> <br />
   <label htmlFor="dailynote">Daily Note:</label>
-    <textarea id="dailynote" name="dailynote"  rows="4" value={FormValues.dailynote}
+    <textarea id="dailynote" name="dailynote"  rows="3" cols="60" value={FormValues.dailynote}
   onChange={handleChangeFormValues} /> <br />
   <button type="submit" id="SubmitButton">Submit</button>
     </form>
+<center><img src={logo} alt="Motivational Picture" height={300}/></center>
     </>
 )
 }
