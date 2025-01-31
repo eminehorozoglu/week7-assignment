@@ -29,18 +29,19 @@ export default function Data() {
         console.error("SIDE EFFECT!!!: Failed to fetch items!");
         setMessage("SIDE EFFECT!!!: Failed to fetch items!");
       }
+     
     }
     fetchData();
 
   }, [refreshCount]);
-
- 
+  
+  
   return(
+
     <div className = "results-container">
          <h2>Results</h2>
          <center>
     <div id = "message">
-  
   
     {
 
@@ -56,6 +57,7 @@ export default function Data() {
       
     ) 
   }
+  
 
   </div>
   </center>
