@@ -20,6 +20,7 @@ app.get("/",(_,res) => {
         const query = await db.query (`select * from mood`);
         await res.json(query.rows);
     });
+
  
     app.post("/new-data",(req, res) =>{
         console.log("Request body:", req.body);
