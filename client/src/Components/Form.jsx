@@ -43,6 +43,7 @@ function handleSubmit (event){
 
 return(
     <>
+    <br />
     <form onSubmit={handleSubmit} id="moodform">
    <label htmlFor="username">Date :</label>
    <input type="date"
@@ -50,19 +51,23 @@ return(
    name="date" 
    value={FormValues.date}
     required onChange={handleChangeFormValues}/> <br />
-   <label htmlFor="moodchoice">Choose a Mode:</label>
-<input list="Text" id="moodchoice" name="moodchoice" value={FormValues.moodchoice}
+   <label htmlFor="moodchoice">Mode:</label>
+<input list="Text" id="moodchoice" name="moodchoice" placeholder="Enter your mode..."value={FormValues.moodchoice}
   onChange={handleChangeFormValues}/>
+  
  <br />
+
+
+
    <label htmlFor="dailysentence">Daily Motivational Sentence:</label>
     <textarea id="dailysentence" name="dailysentence"  rows="3" cols="60" value={FormValues.dailysentence}
   onChange={handleChangeFormValues} /> <br />
   <label htmlFor="dailynote">Daily Note:</label>
     <textarea id="dailynote" name="dailynote"  rows="3" cols="60" value={FormValues.dailynote}
-  onChange={handleChangeFormValues} /> <br />
+  onChange={handleChangeFormValues} /> 
   <button type="submit" id="SubmitButton">Submit</button>
-    </form>
-<center><img src={logo} alt="Motivational Picture" height={300}/></center>
+    </form> 
+<center><img src={logo} alt="Motivational Picture" height={310}/></center>
     </>
 )
 }

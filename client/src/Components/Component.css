@@ -5,12 +5,13 @@
   }
   
   body {
-    background-color: rgb(226, 119, 221);
+   
     font-family: Arial, Helvetica, sans-serif;
+ background-color: rgb(242, 129, 155);
   }
   
   #moodform{
-    background-color:#f9aff6;
+
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
@@ -19,6 +20,8 @@
     flex-wrap: wrap;
     border-radius: 10px;
     padding: 5px;
+    color: #500223;
+    font-size: large;
   }
   #SubmitButton {
     padding: 15px;
@@ -35,6 +38,7 @@
     justify-content:space-evenly;
     flex-wrap: wrap;
     padding: 15px;
+    color: #7e093a;
   }
   #link{
     display: flex;
@@ -46,11 +50,11 @@
   }
   
   #message {
-    background-color:#f4bdf6;
+    background-color:#f6bdcc;
     /* height: 100%; */
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align:center;
     justify-content: center;
     flex-wrap: wrap;
     border-radius: 10px;
@@ -60,6 +64,7 @@
     border-right: 2px solid #740b32;
     width: 40rem;
     margin: 15px;
+    color: #560628;
 }
 .results-container {
   display: flex;
@@ -68,9 +73,14 @@
   text-align: center;
   margin: 10px; 
   padding: 10px;
+  color: #560628;
 }
 #p1{
   
   border-bottom: 2px solid #740b32;
   
+}
+#background{
+  border-radius: 100px;
+  height: 600px;
 }

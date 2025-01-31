@@ -7,8 +7,8 @@ export default function Header (){
 <>
 <h1 id="header">Daily Mode Tracker</h1>
 <div id ="link">
-    <Link to={"/"}>HOME</Link> <p></p>
-      <Link to={"/form"}>DAIRY FORM</Link> <p></p>
+<Link to={"/"}>HOME</Link>
+      <Link to={"/form"}>DAIRY FORM</Link>
       <Link to={"/entries"}>DIARY ENTRIES</Link>
       </div>
 

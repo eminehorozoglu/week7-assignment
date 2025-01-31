@@ -47,12 +47,7 @@ export default function Data() {
     items.map((item)=>    
       <div key = {item.id}>
         <h3>{item.date}</h3>
-        <p onLoadedData={()=>{const date1 = new Date(item.date)
-         const dateStr = date1.toLocaleString('en-US', {
-            timeZone: "Europe/London"
-          })
-          return console.log(dateStr);}}></p>
-     <p >{item.mood}</p>
+     <p>{item.mood}</p>
      <p> {item.daily_sentence}</p>
      <p id ="p1"> {item.daily_note}</p>
 
