@@ -35,7 +35,7 @@ function handleSubmit (event){
       });
       console.log(FormValues);
       setTimeout(FormValues.onsubmit = function(){
-        alert("Message submitted!")
+        alert("Your registration has been submitted successfully.!")
          location.reload(true);
      })
 
@@ -67,7 +67,7 @@ return(
   onChange={handleChangeFormValues} /> 
   <button type="submit" id="SubmitButton">Submit</button>
     </form> 
-<center><img src={logo} alt="Motivational Picture" height={310}/></center>
+<center><img src={logo} alt="Motivational Picture" id="formlogo" height={290}/></center>
     </>
 )
 }

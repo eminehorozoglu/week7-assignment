@@ -17,7 +17,7 @@ app.get("/",(_,res) => {
     });
 
     app.get("/mood", async (req,res) => {
-        const query = await db.query (`select * from mood`);
+        const query = await db.query (`select * from mood order by date desc`);
         await res.json(query.rows);
     });
 
@@ -33,4 +33,17 @@ app.get("/",(_,res) => {
             message: "The data was added successfully", 
             data: query.rows})
     });
+
+    app.delete("/delete-data", (req, res) => {
+        //I just need to know which specific entry I am deleting --> params
+        //const paramsToDelete = req.params;
+        const data = req.body.FormValues;
+        //I need to query my database
+        const query = db.query(`DELETE FROM mood WHERE id= $1`, [
+            data.id,
+        ]);
+        res.json({
+            message: "The data was added successfully", 
+            data: query.rows})
+      });
    

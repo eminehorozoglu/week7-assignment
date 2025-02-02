@@ -31,11 +31,16 @@ export default function Data() {
         console.error("SIDE EFFECT!!!: Failed to fetch items!");
         setMessage("SIDE EFFECT!!!: Failed to fetch items!");
       }
+      
      
     }
     fetchData();
+    
+        
+    
 
   }, [refreshCount]);
+
   
    
 
@@ -43,28 +48,32 @@ export default function Data() {
 
   return(
 
-    <div className = "results-container">
-         <h2>Daily Entries</h2>
+
+    <div className = "results-container-delete">
+        
          <center>
     <div id = "message">
 
   
     {
 
-    items.map((item)=>    
-      <div key = {item.id}>
-        <h3>{item.date}</h3>
-     <p>{item.mood}</p>
-     <p> {item.daily_sentence}</p>
-     <p id ="p1"> {item.daily_note}</p>
+     
+      items.map((item)=>    
+        <div key = {item.id}>
+          <h2>id: {item.id}</h2>
+          <h3>{item.date}</h3>
+       <p>{item.mood}</p>
+       <p> {item.daily_sentence}</p>
+       <p id ="p1"> {item.daily_note}</p>
+  
 
       </div>
     
       
     ) 
+  
   }
   
-
   </div>
   </center>
     </div>
