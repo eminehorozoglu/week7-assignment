@@ -16,7 +16,7 @@ export default function Data() {
     async function fetchData() {
       try {
         const response = await fetch(
-          "https://week7-assignment-97qo.onrender.com/mood"
+          "https://week7-assignment-z5ha.onrender.com/mood"
         );
         const data = await response.json();
 

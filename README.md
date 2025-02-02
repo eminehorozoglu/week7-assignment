@@ -13,9 +13,11 @@ Wireframe :
 ![Wireframe](./wireframe.jpg)
 
 My Project Plan :
+
 ![Trello](./week7-assignment-trello.jpg)
 
 My Project Database :
+
 ![Database](./database-mood.jpg)
 
 Reflections:
