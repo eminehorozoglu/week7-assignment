@@ -181,6 +181,11 @@
   text-align: center;
   color: #560628;
 }
+    #background{
+  border-radius: 100px;
+  height: 630px;
+  width: 400px;
+}
 }
 
 @media screen and (max-width: 480px)  {
@@ -250,5 +255,10 @@
   justify-content: center;
   text-align: center;
   color: #560628;
+}
+    #background{
+  border-radius: 100px;
+  height: 630px;
+  width: 400px;
 }
 }
