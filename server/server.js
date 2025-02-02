@@ -22,27 +22,27 @@ app.get("/",(_,res) => {
     });
 
  
-    app.post("/new-data",(req, res) =>{
+    app.post("/new-data", async(req, res) =>{
         console.log("Request body:", req.body);
         const data = req.body.FormValues;
-        const query = db.query(`
+        const query = await db.query(`
             INSERT INTO mood (date, mood, daily_sentence, daily_note) 
             VALUES($1, $2, $3, $4) RETURNING *`, 
             [data.date, data.moodchoice, data.dailysentence, data.dailynote]); 
-        res.json({
+            await res.json({
             message: "The data was added successfully", 
             data: query.rows})
     });
 
-    app.delete("/delete-data", (req, res) => {
+    app.delete("/delete-data",async (req, res) => {
         //I just need to know which specific entry I am deleting --> params
         //const paramsToDelete = req.params;
         const data = req.body.FormValues;
         //I need to query my database
-        const query = db.query(`DELETE FROM mood WHERE id= $1`, [
+        const query = await db.query(`DELETE FROM mood WHERE id= $1`, [
             data.id,
         ]);
-        res.json({
+       await res.json({
             message: "The data was added successfully", 
             data: query.rows})
       });
