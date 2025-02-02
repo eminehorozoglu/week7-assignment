@@ -23,7 +23,7 @@ const [FormValues,setFormValues]=useState(
 
 function handleSubmit (event){
     event.preventDefault();
-    fetch("https://week7-assignment-z5ha.onrender.com/new-data", {
+    fetch("https://week7-assignment-server-sj1z.onrender.com/new-data", {
         method: "POST",
        
         headers: {
