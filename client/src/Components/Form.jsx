@@ -36,7 +36,6 @@ function handleSubmit (event){
       console.log(FormValues);
       setTimeout(FormValues.onsubmit = function(){
         alert("Your registration has been submitted successfully.!")
-         location.reload(true);
      })
 
 }

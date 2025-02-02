@@ -37,7 +37,6 @@ function handleSubmit (event){
       console.log(FormValues);
       setTimeout(FormValues.onsubmit = function(){
         alert("Your request submitted and your data deleted.!")
-        location.reload(true);
      })
 
 }
