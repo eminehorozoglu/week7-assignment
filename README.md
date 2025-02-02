@@ -9,13 +9,14 @@ Project description:
 This program is that you can follow your daily mode. You can enter your daily data in the DAIRY FORM tab. You can access the data you have entered in the DAIRY ENTRIES tab. You can delete your data entered in the DELETE DIARY ENTRIES tab by entering the id number.
 
 Wireframe :
-![Wireframe] (./wireframe.jpg)
+
+![Wireframe](./wireframe.jpg)
 
 My Project Plan :
-![Trello] (./week7-assignment-trello.jpg)
+![Trello](./week7-assignment-trello.jpg)
 
 My Project Database :
-![Database] (./database-mood.jpg)
+![Database](./database-mood.jpg)
 
 Reflections:
 

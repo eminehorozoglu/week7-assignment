@@ -24,7 +24,7 @@ const [FormValues,setFormValues]=useState(
 
 function handleSubmit (event){
     event.preventDefault();
-    fetch("http://localhost:8080/delete-data", {
+    fetch("https://week7-assignment-97qo.onrender.com/delete-data", {
         method: "DELETE",
        
         headers: {
