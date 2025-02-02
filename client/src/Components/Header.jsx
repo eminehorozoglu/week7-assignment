@@ -1,5 +1,5 @@
 import "./Component.css"
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 
 export default function Header (){
@@ -12,7 +12,7 @@ export default function Header (){
       <Link to={"/entries"}>DIARY ENTRIES</Link>
       <Link to={"/delete"}>DELETE DIARY ENTRIES</Link>
       </div>
-
+<Outlet />
   </>
     )
     
