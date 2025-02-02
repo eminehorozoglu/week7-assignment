@@ -4,6 +4,7 @@ import { Route,Routes } from "react-router-dom";
 import Result from "./Components/Result";
 import "./App.css"
 import Home from "./Components/Home";
+import Delete from "./Components/delete";
 
 
 
@@ -18,6 +19,7 @@ export default function App(){
         <Route index element={<Home />} />
         <Route element={<Form />} path={"/form"} style="font-size: 24px" />
         <Route element={<Result />} path={"/entries"} style="font-size: 24px" />
+        <Route element={<Delete />} path={"/delete"} style="font-size: 24px" />
          </Routes>
   
 
