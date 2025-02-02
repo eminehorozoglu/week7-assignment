@@ -1,5 +1,6 @@
 import Form from "./Components/Form";
 import Header from "./Components/Header";
+import { BrowserRouter } from "react-router-dom";
 import { Route,Routes } from "react-router-dom";
 import Result from "./Components/Result";
 import "./App.css"
@@ -11,7 +12,8 @@ import Delete from "./Components/Delete";
 export default function App(){
   return(
     <>
-<Header/>
+<Header />
+<BrowserRouter>
 <Routes>
         <Route element={<Header />} path="/"/>
         <Route index element={<Home />} />
@@ -19,6 +21,7 @@ export default function App(){
         <Route element={<Result />} path={"/entries"} style="font-size: 24px" />
         <Route element={<Delete />} path={"/delete"} style="font-size: 24px" />
       </Routes>
+      </BrowserRouter>
 
     </>
   )
