@@ -10,7 +10,6 @@ export default function Header (){
 <Link to={"/"}>HOME</Link>
       <Link to={"/form"}>DAIRY FORM</Link>
       <Link to={"/entries"}>DIARY ENTRIES</Link>
-      <Link to={"/delete"}>DELETE DIARY ENTRIES</Link>
       </div>
 <Outlet />
   </>
