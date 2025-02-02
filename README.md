@@ -1,6 +1,6 @@
 Project name: Daily Mode Tracker
 
-Render link: 
+Render link: https://week7-assignment-client.onrender.com/
 
 Repo link: https://github.com/eminehorozoglu/week7-assignment
 
